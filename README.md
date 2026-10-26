@@ -9,6 +9,8 @@ The study uses six samples from NCBI BioProject PRJNA1138893, including four CRC
 
 The analysis focuses on microbial taxonomic composition, relative abundance, and alpha and beta diversity. Due to the limited sample size, comparisons will be exploratory.
 
+In the first phase of the project (Semester 1), the workflow completed raw read quality assessment, adapter trimming, human host-DNA removal, sequence deduplication, low-complexity read filtering, and marker-based taxonomic profiling using MetaPhlAn v4.2.2. In the continuation phase (Semester 2), the project will focus on downstream statistical and biological analyses in R—specifically alpha and beta microbial diversity, differential abundance testing between CRC and healthy controls, and functional pathway profiling. Due to the limited sample size, biological comparisons are interpreted as exploratory patterns while establishing an end-to-end, reproducible shotgun metagenomics workflow.
+
 ## Research Objectives
 
 The main objectives of this project are to:
@@ -19,8 +21,8 @@ The main objectives of this project are to:
 4. Characterize and compare relative taxonomic composition between CRC and healthy-control samples.
 5. Evaluate alpha diversity within individual samples.
 6. Evaluate beta diversity to explore differences in microbial community structure.
-7. Visualize and biologically interpret the observed microbial patterns.
-8. If feasible, investigate the functional potential of microbial communities.
+7. Identify differentially abundant bacterial taxa (enriched or depleted) in CRC patients compared to healthy controls..
+8. Explore microbial functional potential and metabolic pathways using HUMAnN if computational resources allow.
 
 
 ## Dataset Description
@@ -76,6 +78,7 @@ The following software versions were recorded across the project's computational
 | BBDuk (BBTools) | 39.91 | Low-complexity sequence filtering |
 | MetaPhlAn | 4.2.2 | Marker gene Taxonomic profiling |
 | R (phyloseq,ggplot)| 4.x | Downstream microbial composition, diversity analysis, and visualization |
+| HUMAan | 3.x | Functional potential and metabolic pathway profiling (optional)
 
 ### Computational Environments
 
@@ -93,7 +96,7 @@ Software versions may differ between environments.
 
 ## Bioinformatics Workflow
 
-The preprocessing workflow has been carried out on all six selected samples and has reached the low-complexity filtering stage.
+All data preprocessing stages and taxonomic profiling with MetaPhlAn v4.2.2 have been completed for this semester across all six samples. Downstream diversity, differential abundance, and functional analyses are scheduled for next semester.
 
 ### Workflow Overview
 
@@ -128,13 +131,20 @@ Filtered Paired-End FASTQ Files
 Taxonomic Profiling (MetaPhlan v4.2.2 + CHOCOPhlAn Database) 
    |
    v
-Microbial Composition, Alpha & Beta Diversity Analysis in R [PENDING]
+==========================================================================
+               NEXT SEMESTER (PLANNED DOWNSTREAM ANALYSES)
+==========================================================================
    |
    v
-Differential Taxa Identification & Optional Functional Profiling [PENDING]
+Microbial Composition, Alpha & Beta Diversity Analysis in R [NEXT SEMESTER]
    |
    v
-
+ Differential Abundance (Enriched/Depleted Taxa in CRC) [NEXT SEMESTER]
+   |
+   v
+ Functional Profiling (Metabolic Pathways via HUMAnN) [NEXT SEMESTER]
+   |
+   v
 ```
 
 ### Completed Preprocessing Stages
@@ -149,6 +159,7 @@ Differential Taxa Identification & Optional Functional Profiling [PENDING]
 | Human host read removal | Bowtie2 / Samtools | Completed | 12 non-host FASTQ.gz files, `host_removal_summary.csv`, and `bowtie2_all_samples.log` |
 | Duplicate read removal | Clumpify | Completed | 12 deduplicated FASTQ.gz files, `clumpify_deduplication_summary.csv`, `multiqc_dedup_report.html`, `multiqc_before_after_dedup.html`, and `dedup_fastq_all_samples.tar` |
 | Low-complexity filtering | BBDuk | Completed | 12 filtered FASTQ.gz files, `lowcomplex_summary.csv`, `lowcomplex_all_samples.log`, FastQC and MultiQC report folders |
+|Taxonomic profiling | MetaPhlAn v4.2.2 | Completed | Marker-gene species profiling | Per-sample taxonomic profiles and merged relative abundance tables |
 
 ### Output File Documentation
 
@@ -205,14 +216,11 @@ The presence of output files has been documented; file integrity and detailed qu
 - [x] Remove duplicate sequencing reads.
 - [x] Filter low-complexity sequences.
 - [x] Generate paired-end preprocessing output files for all six samples.
-- [x] Transition taxonomic profiling strategy to MetaPhlAn v4.2.2 with the CHOCOPhlAn database 
+- [x] Complete marker-based taxonomic profiling and relative abundance estimation using MetaPhlAn v4.2.2 
 ### In Progress
 
 ### Next Steps
 
-- [ ] Complete the Kraken2 Standard database download and verify its usability.
-- [ ] Perform taxonomic classification using Kraken2.
-- [ ] Estimate taxonomic abundance using Bracken.
 - [ ] Calculate microbial relative abundance.
 - [ ] Perform alpha diversity analysis in R.
 - [ ] Perform beta diversity analysis in R.
@@ -221,8 +229,10 @@ The presence of output files has been documented; file integrity and detailed qu
 
 ## Analysis Limitations
 
-This study includes a limited number of samples (four CRC and two healthy controls).
+Sample Size: This study examines an exploratory subset of six samples (4 CRC and 2 healthy controls); observed differences represent preliminary microbial patterns rather than validated clinical biomarkers.
 
-Therefore, comparisons will be exploratory, and the results will not be interpreted as definitive evidence of disease-associated microbial differences.
+Computational Resources: Available memory (~8 GB RAM) restricts large k-mer reference databases, motivating the adoption of marker-gene profiling via MetaPhlAn v4.2.2.
+
+Clinical Metadata: Limited individual patient metadata (e.g., diet, BMI, medication history, comorbidities) restricts adjustment for potential confounding variables.
 
 The workflow documentation and analysis results will be updated as the project progresses.
