@@ -1,0 +1,102 @@
+===== SRR29930198 =====
+21440070 reads; of these:
+  21440070 (100.00%) were paired; of these:
+    21384418 (99.74%) aligned concordantly 0 times
+    44831 (0.21%) aligned concordantly exactly 1 time
+    10821 (0.05%) aligned concordantly >1 times
+    ----
+    21384418 pairs aligned concordantly 0 times; of these:
+      2140 (0.01%) aligned discordantly 1 time
+    ----
+    21382278 pairs aligned 0 times concordantly or discordantly; of these:
+      42764556 mates make up the pairs; of these:
+        42748432 (99.96%) aligned 0 times
+        4214 (0.01%) aligned exactly 1 time
+        11910 (0.03%) aligned >1 times
+0.31% overall alignment rate
+
+===== SRR29930199 =====
+20404548 reads; of these:
+  20404548 (100.00%) were paired; of these:
+    20395644 (99.96%) aligned concordantly 0 times
+    7104 (0.03%) aligned concordantly exactly 1 time
+    1800 (0.01%) aligned concordantly >1 times
+    ----
+    20395644 pairs aligned concordantly 0 times; of these:
+      225 (0.00%) aligned discordantly 1 time
+    ----
+    20395419 pairs aligned 0 times concordantly or discordantly; of these:
+      40790838 mates make up the pairs; of these:
+        40779679 (99.97%) aligned 0 times
+        756 (0.00%) aligned exactly 1 time
+        10403 (0.03%) aligned >1 times
+0.07% overall alignment rate
+
+===== SRR29930206 =====
+15831358 reads; of these:
+  15831358 (100.00%) were paired; of these:
+    15793328 (99.76%) aligned concordantly 0 times
+    30785 (0.19%) aligned concordantly exactly 1 time
+    7245 (0.05%) aligned concordantly >1 times
+    ----
+    15793328 pairs aligned concordantly 0 times; of these:
+      1884 (0.01%) aligned discordantly 1 time
+    ----
+    15791444 pairs aligned 0 times concordantly or discordantly; of these:
+      31582888 mates make up the pairs; of these:
+        31572423 (99.97%) aligned 0 times
+        1589 (0.01%) aligned exactly 1 time
+        8876 (0.03%) aligned >1 times
+0.29% overall alignment rate
+
+===== SRR29930207 =====
+18084182 reads; of these:
+  18084182 (100.00%) were paired; of these:
+    17993243 (99.50%) aligned concordantly 0 times
+    74210 (0.41%) aligned concordantly exactly 1 time
+    16729 (0.09%) aligned concordantly >1 times
+    ----
+    17993243 pairs aligned concordantly 0 times; of these:
+      3516 (0.02%) aligned discordantly 1 time
+    ----
+    17989727 pairs aligned 0 times concordantly or discordantly; of these:
+      35979454 mates make up the pairs; of these:
+        35957126 (99.94%) aligned 0 times
+        9403 (0.03%) aligned exactly 1 time
+        12925 (0.04%) aligned >1 times
+0.58% overall alignment rate
+
+===== SRR29930208 =====
+17244592 reads; of these:
+  17244592 (100.00%) were paired; of these:
+    17219465 (99.85%) aligned concordantly 0 times
+    20014 (0.12%) aligned concordantly exactly 1 time
+    5113 (0.03%) aligned concordantly >1 times
+    ----
+    17219465 pairs aligned concordantly 0 times; of these:
+      1435 (0.01%) aligned discordantly 1 time
+    ----
+    17218030 pairs aligned 0 times concordantly or discordantly; of these:
+      34436060 mates make up the pairs; of these:
+        34425235 (99.97%) aligned 0 times
+        2189 (0.01%) aligned exactly 1 time
+        8636 (0.03%) aligned >1 times
+0.19% overall alignment rate
+
+===== SRR29930209 =====
+19915123 reads; of these:
+  19915123 (100.00%) were paired; of these:
+    19905012 (99.95%) aligned concordantly 0 times
+    8148 (0.04%) aligned concordantly exactly 1 time
+    1963 (0.01%) aligned concordantly >1 times
+    ----
+    19905012 pairs aligned concordantly 0 times; of these:
+      289 (0.00%) aligned discordantly 1 time
+    ----
+    19904723 pairs aligned 0 times concordantly or discordantly; of these:
+      39809446 mates make up the pairs; of these:
+        39797901 (99.97%) aligned 0 times
+        958 (0.00%) aligned exactly 1 time
+        10587 (0.03%) aligned >1 times
+0.08% overall alignment rate
+

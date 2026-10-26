@@ -1,0 +1,138 @@
+========== SRR29930198 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930198_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.018 seconds.
+Processing time:   		62.696 seconds.
+
+Input:                  	34804638 reads 		5136382588 bases.
+Low entropy discards:   	26928 reads (0.08%) 	3539496 bases (0.07%)
+Total Removed:          	26928 reads (0.08%) 	3539496 bases (0.07%)
+Result:                 	34777710 reads (99.92%) 	5132843092 bases (99.93%)
+
+Time:                         	62.723 seconds.
+Reads Processed:      34804k 	554.90k reads/sec
+Bases Processed:       5136m 	81.89m bases/sec
+
+========== SRR29930199 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930199_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.010 seconds.
+Processing time:   		47.432 seconds.
+
+Input:                  	33475464 reads 		4941330932 bases.
+Low entropy discards:   	24898 reads (0.07%) 	3297815 bases (0.07%)
+Total Removed:          	24898 reads (0.07%) 	3297815 bases (0.07%)
+Result:                 	33450566 reads (99.93%) 	4938033117 bases (99.93%)
+
+Time:                         	47.449 seconds.
+Reads Processed:      33475k 	705.50k reads/sec
+Bases Processed:       4941m 	104.14m bases/sec
+
+========== SRR29930206 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930206_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.010 seconds.
+Processing time:   		43.881 seconds.
+
+Input:                  	25965012 reads 		3819230564 bases.
+Low entropy discards:   	16324 reads (0.06%) 	2133163 bases (0.06%)
+Total Removed:          	16324 reads (0.06%) 	2133163 bases (0.06%)
+Result:                 	25948688 reads (99.94%) 	3817097401 bases (99.94%)
+
+Time:                         	43.899 seconds.
+Reads Processed:      25965k 	591.48k reads/sec
+Bases Processed:       3819m 	87.00m bases/sec
+
+========== SRR29930207 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930207_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.010 seconds.
+Processing time:   		49.501 seconds.
+
+Input:                  	29745226 reads 		4365893773 bases.
+Low entropy discards:   	22082 reads (0.07%) 	2895330 bases (0.07%)
+Total Removed:          	22082 reads (0.07%) 	2895330 bases (0.07%)
+Result:                 	29723144 reads (99.93%) 	4362998443 bases (99.93%)
+
+Time:                         	49.519 seconds.
+Reads Processed:      29745k 	600.69k reads/sec
+Bases Processed:       4365m 	88.17m bases/sec
+
+========== SRR29930208 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930208_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.010 seconds.
+Processing time:   		67.514 seconds.
+
+Input:                  	28366106 reads 		4170155663 bases.
+Low entropy discards:   	20456 reads (0.07%) 	2644130 bases (0.06%)
+Total Removed:          	20456 reads (0.07%) 	2644130 bases (0.06%)
+Result:                 	28345650 reads (99.93%) 	4167511533 bases (99.94%)
+
+Time:                         	67.533 seconds.
+Reads Processed:      28366k 	420.03k reads/sec
+Bases Processed:       4170m 	61.75m bases/sec
+
+========== SRR29930209 ==========
+java -ea   -Xmx2g -Xms2g -cp /Users/shahadhamad/anaconda3/envs/meta_env/opt/bbmap-39.91-0/current/ bbduk.BBDukS -Xmx2g threads=2 in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_interleaved.fastq.gz interleaved=t out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_lowcomplex_1.fastq.gz out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_lowcomplex_2.fastq.gz entropy=0.5 entropyk=5 entropywindow=50
+Executing bbduk.BBDukS [-Xmx2g, threads=2, in=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_interleaved.fastq.gz, interleaved=t, out1=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_lowcomplex_1.fastq.gz, out2=/Volumes/META/metagenomics_project/data/processed/complexity_dedup/lowcomplex_filtered/SRR29930209_lowcomplex_2.fastq.gz, entropy=0.5, entropyk=5, entropywindow=50]
+Version 39.91
+
+Set threads to 2
+Set INTERLEAVED to true
+Allocating kmer table: 	Initial:
+Memory: max=2147m, total=2147m, free=2127m, used=20m
+
+Input is being processed as paired
+Started output streams:	0.012 seconds.
+Processing time:   		63.144 seconds.
+
+Input:                  	33003046 reads 		4837802550 bases.
+Low entropy discards:   	28570 reads (0.09%) 	3716507 bases (0.08%)
+Total Removed:          	28570 reads (0.09%) 	3716507 bases (0.08%)
+Result:                 	32974476 reads (99.91%) 	4834086043 bases (99.92%)
+
+Time:                         	63.165 seconds.
+Reads Processed:      33003k 	522.49k reads/sec
+Bases Processed:       4837m 	76.59m bases/sec
+
