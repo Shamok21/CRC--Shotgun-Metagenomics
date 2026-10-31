@@ -215,7 +215,6 @@ NCBI SRA (PRJNA1138893)
 3. **Clinical Metadata:** Individual participant clinical variables (e.g., patient age, sex, BMI, diet, medication history, and tumor stage) were unavailable in public records, precluding adjustment for confounding factors.
 4. **Compositional Data:** Metagenomic relative abundances are compositional; shifts in the proportion of one taxon reflect relative community distributions rather than absolute microbial cell counts.
 
-
 ---
 
 ## References
