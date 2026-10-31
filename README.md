@@ -153,7 +153,7 @@ NCBI SRA (PRJNA1138893)
 12. Functional Metagenomic Profiling (Metabolic Pathways via HUMAnN 3)
 ```
 
-```
+---
 
 ## Preprocessing & Taxonomic Profiling Results Summary
 
@@ -235,4 +235,4 @@ NCBI SRA (PRJNA1138893)
 14. Thomas AM, Manghi P, Asnicar F, et al. Metagenomic analysis of colorectal cancer datasets identifies cross-cohort microbial diagnostic signatures and a link with choline degradation. *Nat Med*. 2019;25(4):667–678. [doi:10.1038/s41591-019-0405-7](https://www.google.com/search?q=https://doi.org/10.1038/s41591-019-0405-7)
 15. Pleguezuelos-Manzano C, Puschhof J, Rosendahl Huber A, et al. Mutational signature in colorectal cancer caused by genotoxic pks+ *E. coli*. *Nature*. 2020;580:269–273. [doi:10.1038/s41586-020-2080-8](https://www.google.com/search?q=https://doi.org/10.1038/s41586-020-2080-8)
 16. Sokol H, Pigneur B, Watterlot L, et al. *Faecalibacterium prausnitzii* is an anti-inflammatory commensal bacterium identified by gut microbiota analysis of Crohn disease patients. *Proc Natl Acad Sci USA*. 2008;105(43):16731–16736. [doi:10.1073/pnas.0804812105](https://www.google.com/search?q=https://doi.org/10.1073/pnas.0804812105)
-17. Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome datasets are compositional: and this is not optional. *Front Microbiol*. 2017;8:2224. [doi:10.3389/fmicb.2017.02224](https://www.google.com/search?q=https://doi.org/10.3389/fmicb.2017.02224)
+17. Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome datasets are compositional: and this is not optional. *Front Microbiol*. 2017;8:2224. [doi:10.3389/fmicb.2017.02224](https://www.google.com/search?q=https://doi.org/10.3389/fmicb.2017.02224)e.com/search?q=https://doi.org/10.3389/fmicb.2017.02224)
