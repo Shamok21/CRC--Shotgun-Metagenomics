@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This undergraduate graduation project investigates gut microbial community composition in colorectal cancer (CRC) patients compared with healthy controls using publicly available paired-end shotgun metagenomic sequencing data.
+This undergraduate graduation project investigates gut microbial community composition in colorectal cancer (CRC) patients compared with healthy controls using publicly available paired-end shotgun metagenomic sequencing data.Developed as a capstone project at PNU in collaboration with the Bioinformatics Division at KAIMRC ( https://github.com/KAIMRC-DAIB)
 
 The study analyzes six human fecal metagenomic samples from NCBI BioProject [PRJNA1138893](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1138893), originating from He et al. (2025), comprising four CRC samples and two healthy controls.
 
