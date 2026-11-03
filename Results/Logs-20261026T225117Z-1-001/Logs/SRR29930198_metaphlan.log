@@ -1,0 +1,11 @@
+Sample: SRR29930198
+MetaPhlAn: MetaPhlAn version 4.2.5 (13 Jul 2026)
+No complete MetaPhlAn Bowtie2 database found
+Database: mpa_vJan25_CHOCOPhlAnSGB_202503
+Threads: 8
+Started: 2026-10-21 10:28:49
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+Wed Oct 21 10:41:47 2026: [Warning] The metagenome profile contains clades that represent multiple species merged into a single representant. An additional column listing the merged species is added to the MetaPhlAn output.

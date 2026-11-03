@@ -1,0 +1,139 @@
+# Install packages if needed
+packages <- c("tidyverse", "RColorBrewer")
+
+new_packages <- packages[
+  !packages %in% installed.packages()[, "Package"]
+]
+
+if (length(new_packages) > 0) {
+  install.packages(new_packages)
+}
+
+library(tidyverse)
+library(RColorBrewer)
+
+# Set working directory to the folder containing your file
+setwd("E:/metagenomics_project/HANDOVER/07_Taxonomy/MetaPhlAn/Merged")
+
+data <- read.delim(
+  "merged_abundance_table.tsv",
+  header = TRUE,
+  sep = "\t",
+  check.names = FALSE,
+  stringsAsFactors = FALSE
+)
+readLines("merged_abundance_table.tsv", n = 8)
+
+data <- read.delim(
+  "merged_abundance_table.tsv",
+  header = TRUE,
+  sep = "\t",
+  skip = 1,
+  check.names = FALSE,
+  stringsAsFactors = FALSE
+)
+
+# التأكد من قراءة البيانات
+dim(data)
+head(data)
+colnames(data)
+
+genus_data <- data[grepl("\\|g__", data$clade_name), ]
+
+sample_cols <- setdiff(names(genus_data), "clade_name")
+
+dim(genus_data)
+head(genus_data[, c("clade_name", sample_cols)])
+
+# Keep only rows classified exactly at genus level
+genus_data <- data[grepl("\\|g__[^|]+$", data$clade_name), ]
+
+# Extract genus names
+genus_data$Genus <- sub(".*\\|g__", "", genus_data$clade_name)
+
+# Select sample columns only (exclude clade_name and Genus)
+sample_cols <- setdiff(names(genus_data), c("clade_name", "Genus"))
+
+# Convert sample columns to numeric
+genus_data[sample_cols] <- lapply(genus_data[sample_cols], as.numeric)
+
+# Calculate mean abundance across samples
+genus_data$Mean_Abundance <- rowMeans(
+  genus_data[, sample_cols, drop = FALSE]
+)
+
+# Select top 15 genera
+top_genera <- genus_data[
+  order(genus_data$Mean_Abundance, decreasing = TRUE),
+][1:15, ]
+
+# Display results
+top_genera[, c("Genus", "Mean_Abundance")]
+
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+# Select only the top 15 genera
+plot_data <- top_genera[, c("Genus", sample_cols)]
+
+# Convert data from wide format to long format
+plot_data_long <- pivot_longer(
+  plot_data,
+  cols = all_of(sample_cols),
+  names_to = "Sample",
+  values_to = "Relative_Abundance"
+)
+
+# Check the transformed data
+head(plot_data_long)
+
+ggplot(plot_data_long,
+       aes(x = Genus,
+           y = Relative_Abundance,
+           fill = Sample)) +
+  
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  
+  scale_fill_manual(
+    values = c(
+      "SRR29930198" = "#08306B",
+      "SRR29930199" = "#2171B5",
+      "SRR29930206" = "#6BAED6",
+      "SRR29930207" = "#67000D",
+      "SRR29930208" = "#CB181D",
+      "SRR29930209" = "#FB6A4A"
+    )
+  ) +
+  
+  labs(
+    title = "Genus-Level Relative Abundance Across Individual Samples",
+    x = "Genus",
+    y = "Relative Abundance (%)",
+    fill = "Sample"
+  ) +
+  
+  theme_bw() +
+  
+  theme(
+    plot.title = element_text(
+      hjust = 0.5,
+      face = "bold",
+      size = 14
+    ),
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1,
+      size = 9
+    ),
+    axis.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+# Count all genera in the dataset
+total_genera <- length(unique(genus_data$Genus))
+
+# Display the total number
+total_genera
+
